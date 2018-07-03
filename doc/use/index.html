@@ -239,17 +239,25 @@
                                 
                                 <h1 id="&#x4F7F;&#x7528;&#x6587;&#x6863;">&#x4F7F;&#x7528;&#x6587;&#x6863;</h1>
 <h2 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h2>
-<pre><code class="lang-javaScript"><span class="hljs-keyword">var</span> SC = <span class="hljs-built_in">window</span>.SealCache;
+<pre><code class="lang-javaScript">
+<span class="hljs-keyword">var</span> data = {
+    <span class="hljs-string">&apos;num&apos;</span>: <span class="hljs-string">&apos;01&apos;</span>,
+    <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;xiaoming&apos;</span>,
+    <span class="hljs-string">&apos;age&apos;</span>: <span class="hljs-number">18</span>,
+    <span class="hljs-string">&apos;hobby&apos;</span>: [<span class="hljs-string">&apos;&#x8DB3;&#x7403;&apos;</span>, <span class="hljs-string">&apos;&#x7BEE;&#x7403;&apos;</span>, <span class="hljs-string">&apos;&#x7FBD;&#x6BDB;&#x7403;&apos;</span>]
+};
+
+<span class="hljs-keyword">var</span> SC = <span class="hljs-built_in">window</span>.SealCache;
 <span class="hljs-keyword">var</span> cache = <span class="hljs-keyword">new</span> SC();
 </code></pre>
 <h2 id="&#x8BBE;&#x7F6E;">&#x8BBE;&#x7F6E;</h2>
-<pre><code class="lang-js">cache.set(<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-number">100</span>)
+<pre><code class="lang-js">cache.set(<span class="hljs-string">&apos;user&apos;</span>, data)
 </code></pre>
 <h2 id="&#x83B7;&#x53D6;">&#x83B7;&#x53D6;</h2>
-<pre><code class="lang-javaScript">cache.get(<span class="hljs-string">&apos;a&apos;</span>)
+<pre><code class="lang-javaScript">cache.get(<span class="hljs-string">&apos;user&apos;</span>)
 </code></pre>
-<h2 id="&#x6E05;&#x7A7A;">&#x6E05;&#x7A7A;</h2>
-<pre><code class="lang-javaScript">cache.clear()
+<h2 id="&#x79FB;&#x9664;">&#x79FB;&#x9664;</h2>
+<pre><code class="lang-javaScript">cache.remove(<span class="hljs-string">&apos;user&apos;</span>)
 </code></pre>
 
                                 
@@ -294,7 +302,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"使用文档","level":"1.2","depth":1,"next":{"title":"使用1","level":"1.2.1","depth":2,"path":"doc/use/use1.md","ref":"doc/use/use1.md","articles":[]},"previous":{"title":"项目介绍","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/use/README.md","mtime":"2018-07-03T12:32:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-03T12:49:02.332Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"使用文档","level":"1.2","depth":1,"next":{"title":"使用1","level":"1.2.1","depth":2,"path":"doc/use/use1.md","ref":"doc/use/use1.md","articles":[]},"previous":{"title":"项目介绍","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"doc/use/README.md","mtime":"2018-07-03T13:34:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-03T13:49:19.267Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

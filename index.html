@@ -236,7 +236,12 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="seal-cache">seal-cache</h1>
-<p>&#x8F7B;&#x91CF;&#x7EA7;&#x524D;&#x7AEF;&#x7F13;&#x5B58;&#x5DE5;&#x5177;~</p>
+<ul>
+<li>&#x8F7B;&#x91CF;&#x7EA7;&#x524D;&#x7AEF;&#x7F13;&#x5B58;&#x5DE5;&#x5177;</li>
+<li>&#x5BF9;localStorage&#x8FDB;&#x884C;&#x4E86;&#x5C01;&#x88C5;</li>
+<li>&#x652F;&#x6301;number, string, boolean, object&#x7C7B;&#x578B;</li>
+</ul>
+<p><a href="https://seal-cache.github.io/" target="_blank">&#x5B98;&#x7F51;</a></p>
 <h2 id="&#x5B89;&#x88C5;&#x4E0B;&#x8F7D;">&#x5B89;&#x88C5;&#x4E0B;&#x8F7D;</h2>
 <ul>
 <li><a href="https://github.com/seal-cache/seal-cache/releases" target="_blank">&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a></li>
@@ -244,11 +249,18 @@
 <li>CDN <code>http://unpkg.com/seal-cache/release/bundle.js</code></li>
 </ul>
 <h2 id="&#x5FEB;&#x901F;&#x4F7F;&#x7528;">&#x5FEB;&#x901F;&#x4F7F;&#x7528;</h2>
-<pre><code class="lang-javaScript"><span class="hljs-keyword">var</span> SC = <span class="hljs-built_in">window</span>.SealCache;
+<pre><code class="lang-javaScript"><span class="hljs-keyword">var</span> data = {
+    <span class="hljs-string">&apos;num&apos;</span>: <span class="hljs-string">&apos;01&apos;</span>,
+    <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;xiaoming&apos;</span>,
+    <span class="hljs-string">&apos;age&apos;</span>: <span class="hljs-number">18</span>,
+    <span class="hljs-string">&apos;hobby&apos;</span>: [<span class="hljs-string">&apos;&#x8DB3;&#x7403;&apos;</span>, <span class="hljs-string">&apos;&#x7BEE;&#x7403;&apos;</span>, <span class="hljs-string">&apos;&#x7FBD;&#x6BDB;&#x7403;&apos;</span>]
+};
+
+<span class="hljs-keyword">var</span> SC = <span class="hljs-built_in">window</span>.SealCache;
 <span class="hljs-keyword">var</span> cache = <span class="hljs-keyword">new</span> SC();
-cache.set(<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-number">100</span>);
-alert(cache.get(<span class="hljs-string">&apos;a&apos;</span>));
-cache.clear();
+cache.set(<span class="hljs-string">&apos;user&apos;</span>, data);
+<span class="hljs-built_in">console</span>.log(cache.get(<span class="hljs-string">&apos;user&apos;</span>));
+cache.remove(<span class="hljs-string">&apos;user&apos;</span>);
 </code></pre>
 <ul>
 <li><a href="doc/use/">&#x4F7F;&#x7528;&#x6587;&#x6863;</a></li>
@@ -302,7 +314,7 @@ cache.clear();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"项目介绍","level":"1.1","depth":1,"next":{"title":"使用文档","level":"1.2","depth":1,"path":"doc/use/README.md","ref":"doc/use/README.md","articles":[{"title":"使用1","level":"1.2.1","depth":2,"path":"doc/use/use1.md","ref":"doc/use/use1.md","articles":[]},{"title":"使用2","level":"1.2.2","depth":2,"path":"doc/use/use2.md","ref":"doc/use/use2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-07-03T12:38:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-03T12:49:02.332Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"项目介绍","level":"1.1","depth":1,"next":{"title":"使用文档","level":"1.2","depth":1,"path":"doc/use/README.md","ref":"doc/use/README.md","articles":[{"title":"使用1","level":"1.2.1","depth":2,"path":"doc/use/use1.md","ref":"doc/use/use1.md","articles":[]},{"title":"使用2","level":"1.2.2","depth":2,"path":"doc/use/use2.md","ref":"doc/use/use2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-07-03T13:40:20.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-03T13:49:19.267Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
